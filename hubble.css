@@ -1,0 +1,108 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.nav .nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: hsl(248, 33%, 18%);
+  box-shadow: 0.5rem 0.5rem 5px gray;
+  list-style-type: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  
+}
+.nav a {
+  text-decoration: none;
+  color: azure;
+  margin: 1rem;
+}
+.nav-items li {
+  padding: 0.7rem;
+  margin: 0.25rem 0;
+  text-align: left;
+  width: 100%;
+}
+.nav-items li:hover {
+  background: hsl(248, 45%, 18%);
+  border-top: 0.5px solid hsla(208, 60%, 28%, 1);
+  border-bottom: 0.5px solid hsla(208, 60%, 28%, 1);
+}
+.fa-solid {
+  margin: 1rem;
+  color: azure;
+}
+h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  word-spacing: 1.5rem;
+  text-shadow: 2px 2px 0 #000;
+  text-transform: uppercase;
+}
+.hero {
+  background: url(../images/hubble.jpg) no-repeat;
+  background-size: cover;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  height: 100vh;
+}
+
+.hero .tagline {
+  background: hsl(0, 0%, 0%, 0.6);
+  /* font-size: 2rem; */
+  padding: 1.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: url(../images/hubble@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+  .hero .tagline {
+    font-size: 3rem;
+  }
+  .nav .nav-items {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1.5rem 0;
+  }
+  .nav-items li {
+    width: auto;
+  }
+  .fa-solid {
+    margin: 0.5rem;
+    color: azure;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: url(../images/hubble@3x.jpg) no-repeat;
+    background-size: cover;
+  }
+  .hero .tagline {
+    font-size: 3.5rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background: url(../images/hubble@4x.jpg) no-repeat;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+}

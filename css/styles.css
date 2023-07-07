@@ -15,7 +15,6 @@ body {
   list-style-type: none;
   padding: 0.5rem 0;
   margin: 0;
-  
 }
 .nav a {
   text-decoration: none;
@@ -45,7 +44,7 @@ h1 {
   text-transform: uppercase;
 }
 .hero {
-  background: url(../images/hubble.jpg) no-repeat;
+  background: url(../images/citadel920@2x.jpg) no-repeat;
   background-size: cover;
   color: azure;
   display: flex;
@@ -66,7 +65,7 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background: url(../images/hubble@2x.jpg) no-repeat;
+    background: url(../images/citadel920@2x.jpg) no-repeat;
     background-size: cover;
   }
   .hero .tagline {
@@ -87,7 +86,7 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   .hero {
-    background: url(../images/hubble@3x.jpg) no-repeat;
+    background: url(../images/citadel1354@3x.jpg) no-repeat;
     background-size: cover;
   }
   .hero .tagline {
@@ -99,7 +98,7 @@ h1 {
 }
 @media screen and (min-width: 1440px) {
   .hero {
-    background: url(../images/hubble@4x.jpg) no-repeat;
+    background: url(../images/citadel1600@4x.jpg) no-repeat;
     background-size: cover;
   }
   h1 {

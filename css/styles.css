@@ -5,13 +5,16 @@ body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 2rem;
 }
+.nav {
+  width: 100%;
+}
 .nav .nav-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background: hsl(248, 33%, 18%);
-  box-shadow: 0.5rem 0.5rem 5px gray;
+  /* box-shadow: 0.5rem 0.5rem 5px gray; */ /*Need control*/
   list-style-type: none;
   padding: 0.5rem 0;
   margin: 0;
@@ -49,11 +52,12 @@ h1 {
   color: azure;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   text-transform: capitalize;
   height: 100vh;
+  width: 100%;
 }
 
 .hero .tagline {
@@ -63,6 +67,11 @@ h1 {
   letter-spacing: 1.5px;
   font-weight: 300;
 }
+/* @media screen and (max-width: 412px) { */
+/* .hero { */
+/*      */
+/* } */
+/* } */
 @media screen and (min-width: 768px) {
   .hero {
     background: url(../images/citadel920@2x.jpg) no-repeat;
@@ -71,9 +80,14 @@ h1 {
   .hero .tagline {
     font-size: 3rem;
   }
+  h1 {
+    font-size: 5rem;
+  }
+
   .nav .nav-items {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: flex-start; /*Control*/
     padding: 1.5rem 0;
   }
   .nav-items li {

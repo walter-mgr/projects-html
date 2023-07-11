@@ -68,6 +68,7 @@ img {
 .gallery {
   display: grid;
   grid-gap: 10px;
+  margin-bottom: 1rem;
 }
 
 .gallery img {

@@ -46,7 +46,7 @@ h1 {
   text-shadow: 2px 2px 0 #000;
   text-transform: uppercase;
 }
-.hero {
+.banner {
   background: url(../images/citadel920@2x.jpg) no-repeat;
   background-size: cover;
   color: azure;
@@ -60,7 +60,7 @@ h1 {
   width: 100%;
 }
 
-.hero .tagline {
+.banner .tagline {
   background: hsl(0, 0%, 0%, 0.6);
   /* font-size: 2rem; */
   padding: 1.5rem;
@@ -68,16 +68,16 @@ h1 {
   font-weight: 300;
 }
 /* @media screen and (max-width: 412px) { */
-/* .hero { */
+/* .banner { */
 /*      */
 /* } */
 /* } */
 @media screen and (min-width: 768px) {
-  .hero {
+  .banner {
     background: url(../images/citadel920@2x.jpg) no-repeat;
     background-size: cover;
   }
-  .hero .tagline {
+  .banner .tagline {
     font-size: 3rem;
   }
   h1 {
@@ -108,11 +108,11 @@ h1 {
   .fa-house {
     padding-left: 1rem;
   }
-  .hero {
+  .banner {
     background: url(../images/citadel1354@3x.jpg) no-repeat;
     background-size: cover;
   }
-  .hero .tagline {
+  .banner .tagline {
     font-size: 3.5rem;
   }
   h1 {
@@ -120,7 +120,7 @@ h1 {
   }
 }
 @media screen and (min-width: 1440px) {
-  .hero {
+  .banner {
     background: url(../images/citadel1600@4x.jpg) no-repeat;
     background-size: cover;
   }

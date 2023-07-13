@@ -46,11 +46,6 @@ h1 {
   text-shadow: 2px 2px 0 #000;
   text-transform: uppercase;
 }
-h3 {
-  text-shadow: 2px 2px 0 #000;
-  font-style: italic;
-  text-transform: uppercase;
-}
 
 .banner {
   background: url(../images/citadel920@2x.jpg) no-repeat;

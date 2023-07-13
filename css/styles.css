@@ -46,6 +46,12 @@ h1 {
   text-shadow: 2px 2px 0 #000;
   text-transform: uppercase;
 }
+h3 {
+  text-shadow: 2px 2px 0 #000;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 .banner {
   background: url(../images/citadel920@2x.jpg) no-repeat;
   background-size: cover;
@@ -67,11 +73,12 @@ h1 {
   letter-spacing: 1.5px;
   font-weight: 300;
 }
-/* @media screen and (max-width: 412px) { */
-/* .banner { */
-/*      */
-/* } */
-/* } */
+.banner h3 {
+  background: hsl(0, 0%, 0%, 0.6);
+  padding: 1.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
 @media screen and (min-width: 768px) {
   .banner {
     background: url(../images/citadel920@2x.jpg) no-repeat;

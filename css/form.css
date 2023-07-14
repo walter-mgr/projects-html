@@ -3,24 +3,34 @@ html {
 }
 body {
   margin: 10px;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+fieldset {
+  border-radius: 5px;
+  box-shadow: 0.5rem 0.5rem 5px hsla(207, 62%, 77%, 0.35);
 }
 h2 {
+  font-size: 2.441rem;
   padding: 0 0.5rem;
 }
 .form-group {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 label {
   display: block;
+  margin-bottom: 0.25rem;
 }
-input [type="text"],
-input [type="email"] {
-  padding: 0.5rem 0.7rem;
+input {
+  padding: 0.7rem 0.7rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  transition: 0.15s;
+}
+input:focus {
+  border-color: #7baffc;
+  outline: 0;
+  box-shadow: 0 0 0 4px hsla(207, 62%, 77%, 0.25);
 }
 .check-box {
   display: flex;
@@ -28,5 +38,15 @@ input [type="email"] {
 }
 .remember-me {
   width: 1.5rem;
+  margin-left: 1.5rem;
+}
+button {
+  background: hsl(216, 100%, 59%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+button:nth-of-type(2) {
   margin-left: 1.5rem;
 }

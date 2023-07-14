@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 10px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+h2 {
+  padding: 0 0.5rem;
+}
+.form-group {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+}
+input [type="text"],
+input [type="email"] {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.check-box {
+  display: flex;
+  font-size: 1.5rem;
+}
+.remember-me {
+  width: 1.5rem;
+  margin-left: 1.5rem;
+}

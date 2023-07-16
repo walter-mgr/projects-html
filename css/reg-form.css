@@ -1,1 +1,7 @@
-
+.reg-form {
+  margin: 1rem;
+  border: 1px solid gray;
+}
+.form {
+  padding: 1rem;
+}

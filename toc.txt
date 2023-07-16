@@ -3,4 +3,5 @@
 
 bootstrap //
 
+vscode://eamodio.gitlens/did-authenticate?gkstate=b8acda12-c5bd-4e9c-b601-130f6d0013ca&windowId=1&code=e6bab94dcda54c446ef5d3feed265f7ebed669c3&referrer=gitlens
 

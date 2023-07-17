@@ -11,7 +11,7 @@ body {
   margin: 10px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-fieldset {
+.cr-account {
   border-radius: 5px;
   box-shadow: 0.5rem 0.5rem 5px hsla(207, 62%, 77%, 0.35);
 }

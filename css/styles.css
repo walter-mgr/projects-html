@@ -10,6 +10,8 @@ html {
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  background: url(../images/citadel920@2x.jpg) no-repeat;
+  background-size: cover;
 }
 .nav {
   width: 100%;
@@ -54,8 +56,6 @@ h1 {
 }
 
 .banner {
-  background: url(../images/citadel920@2x.jpg) no-repeat;
-  background-size: cover;
   color: azure;
   display: flex;
   flex-direction: column;

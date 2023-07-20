@@ -13,42 +13,77 @@
   </head>
   <body>
     <section>
-      <form action="" method="get" class="reg-form">
+      <form
+        action="https://formspree.io/f/maygnypy"
+        method="get"
+        class="reg-form"
+      >
         <fieldset class="form">
           <legend><h4>Please fill out the form:</h4></legend>
           <div class="form-group">
             <label for="name">First Name</label>
-            <input id="name" type="text" />
+            <input
+              id="name"
+              type="text"
+              minlength="4"
+              maxlength="20"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="surname">Last Name</label>
-            <input id="surname" type="text" />
+            <input
+              id="surname"
+              type="text"
+              minlength="4"
+              maxlength="20"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input id="email" type="email" />
+            <input id="email" type="email" required />
           </div>
           <div>
             <label for="password">Create a Password</label>
-            <input id="password" type="password" />
+            <input
+              id="password"
+              type="password"
+              minlength="4"
+              maxlength="15"
+              required
+            />
           </div>
           <div>
             <label for="surname">Confirm Your Password</label>
-            <input id="surname" type="password" />
+            <input id="surname" type="password" required />
           </div>
           <div>
-            <label for="day">Country</label>
-            <input list="days" name="day" id="day" />
-            <datalist id="days">
-              <option value="Austria">Austria</option>
-              <option value="Austria">Germany</option>
-              <option value="Austria">Czech Republic</option>
-              <option value="Austria">England</option>
-              <option value="Austria">Poland</option>
-              <option value="Austria">Italy</option>
-              <option value="Austria">Spain</option>
+            <label for="country">Country</label>
+            <input
+              list="countries"
+              name="country"
+              id="country"
+              type="text"
+              placeholder="Select Your Country..."
+            />
+            <datalist id="countries">
+              <option data-value="1">Austria</option>
+              <option data-value="2">Australia</option>
+              <option data-value="3">Argentina</option>
+              <option data-value="4">Belgia</option>
+              <option data-value="5">Czech Republic</option>
+              <option data-value="6">Danmark</option>
+              <option data-value="7">England</option>
+              <option data-value="8">France</option>
+              <option data-value="9">Germany</option>
+              <option data-value="10">Italy</option>
+              <option data-value="11">India</option>
+              <option data-value="12">Portugal</option>
+              <option data-value="13">Spain</option>
             </datalist>
           </div>
+
           <div>
             <label for="adress">Adress</label>
             <input id="adress" type="text" />
@@ -70,9 +105,11 @@
               placeholder="Message max 100 characters..."
             ></textarea>
           </div>
-          <div class="form-group check-box">
-            <label for="remember-me">Remember me</label>
-            <input id="remember-me" type="checkbox" class="remember-me" />
+          <div class="float-right">
+            <input type="checkbox" id="confirmField" />
+            <label class="label-inline" for="confirmField"
+              >Send a copy to yourself</label
+            >
           </div>
           <div class="form-group check-box">
             <button type="submit">Submit</button>

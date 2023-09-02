@@ -136,3 +136,8 @@ h1 {
     font-size: 8rem;
   }
 }
+/* BLOCK */
+.block {
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+}

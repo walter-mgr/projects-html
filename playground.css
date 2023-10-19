@@ -1,5 +1,6 @@
 :root {
   --color-headings: #efefef;
+  --color-header: #1a1a27;
 }
 
 *,
@@ -75,4 +76,43 @@ h1 {
 
 .image-container__item img {
   width: 100%;
+}
+
+/* Navbar */
+.nav {
+  background: var(--color-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+.nav__list {
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+}
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+.nav__item > a:hover {
+  color: #fff;
+}
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+.nav__brand {
+  transform: translateY(5px);
 }

@@ -4,36 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="about-me.css" />
+    <link rel="stylesheet" href="playground.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
+0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
       <button class="btn"><a href="/index.html">Back to main</a></button>
     </nav>
-    <header></header>
-    <main class="block">
-      <section class="sideBar">My skills</section>
-      <section class="testimonials">
-        <div class="my-regards">
-          <div class="my-regards-img">
-            <img src="/images/crt-html-1.png" alt="Certificate 1" />
-          </div>
-          <div class="my-regards-img">
-            <img src="/images/crt-html-2.png" alt="Certificate 2 " />
-          </div>
-          <div class="my-regards-img">
-            <img src="/images/crt-html-3.png" alt="Certificate3" />
-          </div>
-          <div class="my-regards-img">
-            <img src="/images/crt-js-1.png" alt="Certificate3" />
-          </div>
-          <div class="my-regards-img">
-            <img src="/images/srt-js-2.png" alt="Certificate3" />
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-    <button><a href="/index.html">Back to Main</a></button>
+    <header class="header grid grid--1x2">
+      <div>
+        <h1>About me</h1>
+      </div>
+      <div class="image-container__item">
+        <img class="banner" src="/images/my-photo-3.jpg" alt="" />
+      </div>
+    </header>
+    <section class="image-container grid grid--1x2">
+      <div class="image-container__item">
+        <img src="/images/crt-html-1.png" alt="" />
+      </div>
+      <div class="image-container__item">
+        <img src="/images/crt-html-2.png" alt="" />
+      </div>
+      <div class="image-container__item">
+        <img src="/images/crt-html-3.png" alt="" />
+      </div>
+      <div class="image-container__item">
+        <img src="/images/crt-js-1.png" alt="" />
+      </div>
+      <div class="image-container__item">
+        <img src="/images/srt-js-2.png" alt="" />
+      </div>
+    </section>
   </body>
 </html>

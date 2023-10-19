@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Image-container component */
+.image-container {
+  display: grid;
+  /* align-items: stretch; */
+  /* justify-items: stretch; */
+  gap: 15px;
+
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.image-container__item img {
+  width: 100%;
+}
+
+@media screen and (min-width: 420px) {
+  .image-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -28,6 +28,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+  margin: 0;
 }
 p {
   margin-top: 0;
@@ -172,9 +173,44 @@ h1 {
 }
 */
 /* visibility */
+/*
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
 }
+*/
 /* ===================================== */
+/* COLLAPSIBLE COMPONENT */
+.shevron {
+  width: 50px;
+  height: 50px;
+  color: blue;
+}
+.collapsible__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 1rem; */
+}
+/* Set INVISIBILITY to the components 
+
+1. Collapsible kontent is hidden: display - none
+*/
+
+.collapsible__content {
+  display: none;
+}
+/* Set VISIBILITY to the components
+
+1. Define a new class for visibility:
+    class = "set-visibility"
+2. Rotate shevron to the (90deg) => right/bottom
+3. Make div element with "collapsible__content" visible
+*/
+.set-visibility.collapsible__shevron {
+  transform: rotate(90deg);
+}
+.set-visibility.collapsible__content {
+  display: block;
+}

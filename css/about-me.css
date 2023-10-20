@@ -1,5 +1,6 @@
 :root {
   --color-headings: #efefef;
+  --color-header: #1a1a27;
 }
 
 *,
@@ -16,6 +17,9 @@ html {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 0;
 }
+body {
+  font-size: 1.8rem;
+}
 h1 {
   font-size: 6rem;
 }
@@ -29,7 +33,7 @@ p {
   margin-top: 0;
   color: #efefef;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.1rem;
 }
 
@@ -54,14 +58,6 @@ p {
   padding: 2rem;
 }
 
-.banner {
-  max-width: 200px;
-  border-radius: 50%;
-}
-
-@media screen and (min-width: 425px) {
-}
-
 h1 {
   color: var(--color-headings);
   text-transform: uppercase;
@@ -70,6 +66,10 @@ h1 {
 }
 
 /* Image-container component */
+.banner {
+  max-width: 200px;
+  border-radius: 50%;
+}
 
 .image-container {
   max-width: 750px;
@@ -84,3 +84,65 @@ h1 {
 .box-shadow {
   box-shadow: 0 0 20px 10px #f3f3f3;
 }
+/* Navbar */
+.nav {
+  background: var(--color-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+.nav__list {
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+  /* display: none; */
+}
+.nav__item {
+  padding: 0.7rem 2rem;
+  border-bottom: 1px solid #222;
+}
+.nav__item:last-of-type {
+  padding-bottom: 1.5rem;
+}
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+  text-decoration: 0;
+}
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+.icon-menu--dark {
+  width: 40px;
+  height: 40px;
+  color: var(--color-headings);
+  background: #686868;
+  margin: 1.5rem 0.5rem;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 2px #f3f3f3;
+  cursor: pointer;
+  /* display: none; */
+}
+.icon-menu--dark:hover {
+  background: #837f7f;
+  box-shadow: 0 0 5px 2.5px #f3f3f3;
+}
+/* ===================================== */
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+/* visibility */
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+/* ===================================== */

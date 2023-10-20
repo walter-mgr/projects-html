@@ -1,5 +1,5 @@
 :root {
-  --color-headings: #efefef;
+  --color-headings: #e8e8e8;
   --color-header: #1a1a27;
 }
 
@@ -194,9 +194,9 @@ h1 {
   /* padding: 0 1rem; */
 }
 .shevron {
-  width: 50px;
-  height: 50px;
-  color: blue;
+  width: 35px;
+  height: 35px;
+  color: var(--color-headings);
 }
 .shevron {
   transform: rotate(-90deg);
@@ -227,4 +227,28 @@ h1 {
 .set-visibility .collapsible__content {
   max-height: 100%;
   opacity: 1;
+}
+.footer {
+  background: var(--color-header);
+  color: var(--color-headings);
+  gap: 1rem;
+  margin: 0;
+  transition: all 0.35s;
+}
+.footer h3 {
+  margin: 1rem;
+}
+.logo-container {
+  width: auto;
+}
+.logo-test {
+  width: 80px;
+  height: 80px;
+  background: #222;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    justify-items: flex-start;
+  }
 }

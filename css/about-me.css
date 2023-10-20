@@ -28,7 +28,6 @@ h2 {
 }
 h3 {
   font-size: 3rem;
-  margin: 0;
 }
 p {
   margin-top: 0;
@@ -85,6 +84,9 @@ h1 {
 
 .image-container__item img {
   width: 100%;
+}
+.image-container__item > h3 {
+  color: var(--color-headings);
 }
 
 .box-shadow {
@@ -147,7 +149,7 @@ h1 {
 }
 .icon-menu--dark:hover {
   background: #837f7f;
-  box-shadow: 0 0 5px 2.5px #f3f3f3;
+  /* box-shadow: 0 0 5px 2.5px #f3f3f3; */
   width: 42px;
   height: 42px;
 }
@@ -157,6 +159,7 @@ h1 {
   }
   .nav {
     display: grid;
+    grid-template-columns: auto 1fr;
   }
   .nav__list {
     display: flex;
@@ -165,21 +168,22 @@ h1 {
 }
 
 /* ===================================== */
-/*
+
 .nav__toggler {
   opacity: 0.5;
   transition: box-shadow 0.3s;
   cursor: pointer;
 }
-*/
-/* visibility */
-/*
-.nav.collapsible--expanded .nav__toggler {
+
+/* Toggler highlighted when menu is open*/
+
+.nav.set-visibility .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 0 3px #666;
+  /* box-shadow: 0 0 0 3px #666; */
+  box-shadow: 0 0 5px 2.5px #f3f3f3;
   border-radius: 5px;
 }
-*/
+
 /* ===================================== */
 /* COLLAPSIBLE COMPONENT */
 
@@ -199,8 +203,8 @@ h1 {
   transition: 0.35s;
 }
 /* Set INVISIBILITY to the components 
-
-1. Collapsible kontent is hidden: display - none
+1. Rotate shevron to make a smooth transition
+2. Collapsible content is hidden:
 */
 
 .collapsible__content {

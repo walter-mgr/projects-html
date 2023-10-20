@@ -84,6 +84,7 @@ h1 {
 .box-shadow {
   box-shadow: 0 0 20px 10px #f3f3f3;
 }
+/* ======================================== */
 /* Navbar */
 .nav {
   background: var(--color-header);
@@ -92,6 +93,14 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   padding: 0 1rem;
+}
+
+/*  FIXME: control selector*/
+
+.nav a {
+  color: #d2d0db;
+  transition: color 0.3s;
+  text-decoration: 0;
 }
 .nav__list {
   width: 100%;
@@ -104,15 +113,17 @@ h1 {
   border-bottom: 1px solid #222;
 }
 .nav__item:last-of-type {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
 }
-.nav__item > a {
-  color: #d2d0db;
-  transition: color 0.3s;
-  text-decoration: 0;
-}
-.nav__item > a:hover {
+/*  TODO: control selector*/
+/* .nav__item > a { */
+/* color: #d2d0db; */
+/* transition: color 0.3s; */
+/* text-decoration: 0; */
+/* } */
+.nav a:hover {
   color: #fff;
+  font-size: 1.9rem;
 }
 
 .nav__brand {
@@ -132,6 +143,8 @@ h1 {
 .icon-menu--dark:hover {
   background: #837f7f;
   box-shadow: 0 0 5px 2.5px #f3f3f3;
+  width: 42px;
+  height: 42px;
 }
 /* ===================================== */
 .nav__toggler {

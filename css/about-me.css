@@ -36,6 +36,11 @@ p {
   text-align: left;
   letter-spacing: 0.1rem;
 }
+/* LISTS */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
 
 /* Grids */
 .grid {
@@ -44,7 +49,7 @@ p {
   align-items: center;
   justify-items: center;
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -85,7 +90,7 @@ h1 {
   box-shadow: 0 0 20px 10px #f3f3f3;
 }
 /* ======================================== */
-/* Navbar */
+/* NAVBAR */
 .nav {
   background: var(--color-header);
   display: flex;
@@ -95,7 +100,7 @@ h1 {
   padding: 0 1rem;
 }
 
-/*  FIXME: control selector*/
+/*  TODO: control selector*/
 
 .nav a {
   color: #d2d0db;
@@ -105,7 +110,7 @@ h1 {
 .nav__list {
   width: 100%;
   margin: 0;
-  list-style-type: none;
+  /* list-style-type: none; */
   /* display: none; */
 }
 .nav__item {
@@ -138,7 +143,6 @@ h1 {
   border-radius: 3px;
   box-shadow: 0 0 5px 2px #f3f3f3;
   cursor: pointer;
-  /* display: none; */
 }
 .icon-menu--dark:hover {
   background: #837f7f;
@@ -146,12 +150,27 @@ h1 {
   width: 42px;
   height: 42px;
 }
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav {
+    display: grid;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: end;
+  }
+}
+
 /* ===================================== */
+/*
 .nav__toggler {
   opacity: 0.5;
   transition: box-shadow 0.3s;
   cursor: pointer;
 }
+*/
 /* visibility */
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;

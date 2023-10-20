@@ -182,16 +182,21 @@ h1 {
 */
 /* ===================================== */
 /* COLLAPSIBLE COMPONENT */
-.shevron {
-  width: 50px;
-  height: 50px;
-  color: blue;
-}
+
 .collapsible__heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* padding: 0 1rem; */
+}
+.shevron {
+  width: 50px;
+  height: 50px;
+  color: blue;
+}
+.shevron {
+  transform: rotate(-90deg);
+  transition: 0.35s;
 }
 /* Set INVISIBILITY to the components 
 
@@ -199,7 +204,10 @@ h1 {
 */
 
 .collapsible__content {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.35s;
 }
 /* Set VISIBILITY to the components
 
@@ -209,8 +217,10 @@ h1 {
 3. Make div element with "collapsible__content" visible
 */
 .set-visibility .collapsible__shevron {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
+  transition: transform 0.35s;
 }
 .set-visibility .collapsible__content {
-  display: block;
+  max-height: 100%;
+  opacity: 1;
 }

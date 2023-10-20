@@ -208,9 +208,9 @@ h1 {
 2. Rotate shevron to the (90deg) => right/bottom
 3. Make div element with "collapsible__content" visible
 */
-.set-visibility.collapsible__shevron {
+.set-visibility .collapsible__shevron {
   transform: rotate(90deg);
 }
-.set-visibility.collapsible__content {
+.set-visibility .collapsible__content {
   display: block;
 }

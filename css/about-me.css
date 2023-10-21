@@ -1,6 +1,6 @@
 :root {
-  --color-headings: #e8e8e8;
   --color-header: #1a1a27;
+  --color-headings: #e8e8e8;
 }
 
 *,
@@ -187,7 +187,7 @@ h1 {
 /* ===================================== */
 /* COLLAPSIBLE COMPONENT */
 
-.collapsible__heading {
+.collapsible__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -231,24 +231,34 @@ h1 {
 .footer {
   background: var(--color-header);
   color: var(--color-headings);
-  gap: 1rem;
+  justify-items: baseline;
+  align-items: flex-start;
+  gap: 0;
   margin: 0;
   transition: all 0.35s;
+  padding: 2rem;
 }
 .footer h3 {
-  margin: 1rem;
+  margin: auto;
 }
+.collapsible__heading {
+  text-transform: uppercase;
+}
+
 .logo-container {
-  width: auto;
+  /* width: auto; */
+  /* display: flex; */
+  /* justify-items: center; */
+  margin-top: 5rem;
+  text-align: center;
 }
-.logo-test {
-  width: 80px;
-  height: 80px;
-  background: #222;
+.logo-container > img {
+  width: 100%;
+  max-height: 200px;
 }
 @media screen and (min-width: 768px) {
   .footer {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    justify-items: flex-start;
+    /* justify-items: flex-start; */
   }
 }

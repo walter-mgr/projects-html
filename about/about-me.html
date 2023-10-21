@@ -9,20 +9,23 @@
     <link rel="stylesheet" href="playground.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?
-family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
-0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="nav grid--1x2 collapsible">
-      <a href="/index.html"><h4>Back To Main</h4> </a>
+      <div class="logo-container__brand">
+        <img class="logo" src="/images/banner.webp" alt="logo" />
+        My Brand
+      </div>
 
       <svg
-        class="icon-menu--dark nav__toggler"
+        class="icon-menu--dark nav__toggler highlighter"
         xmlns="http://www.w3.org/2000/svg"
         height="24"
         viewBox="0 
@@ -37,10 +40,14 @@ family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
       </svg>
 
       <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="/photo-gallery/photo.html">Photo Gallery</a>
+        </li>
         <li class="nav__item"><a href="#">Item</a></li>
-        <li class="nav__item"><a href="#">Item</a></li>
-        <li class="nav__item"><a href="#">Item</a></li>
-        <li class="nav__item"><a href="#">Item</a></li>
+        <li class="nav__item">
+          <a href="mailto:valeraborzak@gmail.com">Mail Me</a>
+        </li>
+        <li class="nav__item"><a href="/index.html">Back To Main</a></li>
       </ul>
     </nav>
     <!-- HEADER -->
@@ -50,7 +57,11 @@ family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
         <p>My skills</p>
       </div>
       <div class="image-container__item">
-        <img class="banner" src="/images/my-photo-3.jpg" alt="My photo" />
+        <img
+          class="banner highlighter"
+          src="/images/my-photo-3.jpg"
+          alt="My photo"
+        />
         <h3>Valeriy Borzak</h3>
       </div>
     </header>
@@ -75,14 +86,14 @@ family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
     <!-- FOOTER COMPONENT -->
     <footer class="footer grid">
       <div class="logo-container">
-        <img src="/images/banner.png" alt="banner" />
+        <img src="/images/banner.webp" alt="banner" />
         <p class="copyright">Copyright 2023&copy; Valeriy Borzak</p>
       </div>
       <div class="collapsible set-visibility">
         <header class="collapsible__header">
           <h3>Ionicons</h3>
           <ion-icon
-            class="shevron collapsible__shevron"
+            class="shevron collapsible__shevron nav__toggler"
             name="chevron-down-circle-outline"
           ></ion-icon>
         </header>
@@ -97,7 +108,7 @@ family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
         <header class="collapsible__header">
           <h3 class="collapsible__heading">Ionicons</h3>
           <ion-icon
-            class="shevron collapsible__shevron"
+            class="shevron collapsible__shevron nav__toggler"
             name="chevron-down-circle-outline"
           ></ion-icon>
         </header>
@@ -110,7 +121,7 @@ family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
         <header class="collapsible__header">
           <h3 class="collapsible__heading">Ionicons</h3>
           <ion-icon
-            class="shevron collapsible__shevron"
+            class="shevron collapsible__shevron nav__toggler"
             name="chevron-down-circle-outline"
           ></ion-icon>
         </header>
@@ -125,7 +136,7 @@ family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
         <header class="collapsible__header">
           <h3 class="collapsible__heading">Ionicons</h3>
           <ion-icon
-            class="shevron collapsible__shevron"
+            class="shevron collapsible__shevron nav__toggler"
             name="chevron-down-circle-outline"
           ></ion-icon>
         </header>
@@ -136,5 +147,9 @@ family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;
       </div>
     </footer>
     <script src="/js/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </body>
 </html>

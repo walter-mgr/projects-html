@@ -1,6 +1,7 @@
 :root {
   --color-header: #1a1a27;
   --color-headings: #e8e8e8;
+  --color-links: #d2d0db;
 }
 
 *,
@@ -31,7 +32,7 @@ h3 {
 p,
 a {
   margin-top: 0;
-  color: #d2d0db;
+  color: var(--color-links);
   font-size: 2rem;
   text-align: left;
   letter-spacing: 0.1rem;
@@ -40,7 +41,6 @@ a {
 }
 a:hover {
   color: #fff;
-  font-size: 1.95rem;
 }
 /* =================================== */
 /* LISTS */
@@ -70,6 +70,10 @@ a:hover {
   background: var(--color-header);
   padding: 2rem;
 }
+.banner {
+  max-width: 200px;
+  border-radius: 50%;
+}
 
 h1 {
   color: var(--color-headings);
@@ -77,14 +81,11 @@ h1 {
   justify-self: center;
   text-align: center;
 }
-
-/* ============================== */
-/* IMAGE CONTAINER component */
-
-.banner {
-  max-width: 200px;
-  border-radius: 50%;
+.header h2 {
+  color: var(--color-headings);
 }
+/* ============================== */
+/* IMAGE CONTAINER component / MAIN Section / */
 
 .image-container {
   max-width: 850px;
@@ -119,12 +120,14 @@ h1 {
   width: 100%;
   margin: 0;
 }
+.nav__list a {
+  font-size: 2.2rem;
+}
 .nav__item {
   padding: 0.7rem 2rem;
   border-bottom: 1px solid #222;
-  /* TODO: control font-size */
-  font-size: 1.8rem;
 }
+
 .nav__item:last-of-type {
   padding-bottom: 1.2rem;
 }
@@ -142,11 +145,18 @@ h1 {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  color: #d2d0db;
-  font-size: 3rem;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #8876d4;
+  /* color: var(--color-links); */
+  text-decoration: underline;
+  cursor: pointer;
 }
-/* ================================== */
-/*ICON component*/
+.logo-container__brand:hover {
+  color: #7565bb;
+}
+
+/*ICON component in the NAVBAR*/
 
 .icon-menu--dark {
   width: 40px;
@@ -181,11 +191,11 @@ h1 {
     display: flex;
     justify-content: end;
   }
-  .nav__list .nav__item {
+  .nav__list a {
     font-size: 1.6rem;
   }
 
-  /* TODO: control visibility when open*/
+  /* SETTING permament visibility when page is reload*/
   /*
   .nav__list.collapsible__content {
     max-height: 100%;
@@ -195,7 +205,7 @@ h1 {
   */
 }
 
-/* ===================================== */
+/* Set toggler prop when menu is closed */
 
 .nav__toggler {
   opacity: 0.5;
@@ -277,6 +287,9 @@ h1 {
 .footer a {
   opacity: 0.5;
 }
+.footer a:hover {
+  opacity: 0.8;
+}
 
 .logo-container .copyright {
   font-size: 1.3rem;
@@ -293,6 +306,9 @@ h1 {
 .logo-container > img {
   width: auto;
   max-height: 190px;
+}
+.logo-container > img:hover {
+  max-height: 192px;
 }
 .collapsible.set-visibility .nav__toggler {
   opacity: 1;

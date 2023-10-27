@@ -1,9 +1,16 @@
+:root {
+  --color-header: #1a1a27;
+  --color-headings: #e8e8e8;
+  --color-links: #d2d0db;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+/* ======================================= */
+/* TYPOGRAFPHY */
 html {
   font-size: 62.5%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -32,6 +39,207 @@ h3 {
 h4 {
   font-size: 1.563rem;
 }
+
+.box-header--nav-bar {
+  justify-content: flex-start;
+}
+
+/* ======================================== */
+/* Need to set to Border-box!!! */
+.btn {
+  padding: 1rem;
+  margin: 1rem;
+  background: dodgerblue;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0.2rem 0.2rem 0.5rem gray;
+}
+.btn .btn-ancor {
+  text-decoration: none;
+  color: white;
+}
+.box-header-btn:hover {
+  background: hsl(210, 83%, 53%);
+}
+
+/* NAVBAR */
+p,
+a {
+  margin-top: 0;
+  color: var(--color-links);
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  text-decoration: 0;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #fff;
+}
+/* =================================== */
+/* LISTS */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+/* =================================== */
+/* GRIDS */
+.grid {
+  display: grid;
+  gap: 15px;
+  align-items: flex-start;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============================== */
+/* HERO component */
+.hero {
+  width: auto;
+  height: auto;
+  background: var(--color-header);
+  padding: 2rem;
+}
+.banner {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+h1 {
+  color: var(--color-headings);
+  text-transform: uppercase;
+  justify-self: center;
+  text-align: center;
+}
+.image-container__item > h3 {
+  color: var(--color-headings);
+  font-weight: 400;
+  text-align: center;
+}
+
+/* ======================================== */
+/* NAVBAR component*/
+.nav {
+  background: var(--color-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+.nav__list a {
+  font-size: 2.2rem;
+}
+.nav__item {
+  padding: 0.7rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item:last-of-type {
+  padding-bottom: 1.2rem;
+}
+
+/* LOGO component */
+.logo {
+  width: auto;
+  max-height: 80px;
+  margin: 0 1.5rem 2rem 0;
+}
+.logo:hover {
+  max-height: 81px;
+}
+.logo-container__brand {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  font-style: italic;
+  font-size: 2.5rem;
+  /* color: var(--color-links); */
+  text-decoration: underline;
+  cursor: pointer;
+  color: #7565bb;
+}
+.logo-container__brand:hover {
+  color: #8876d4;
+}
+
+/*ICON component in the NAVBAR*/
+
+.icon-menu--dark {
+  width: 40px;
+  height: 40px;
+  color: var(--color-headings);
+  background: #686868;
+  margin: 1.5rem 0.5rem;
+  border-radius: 3px;
+  /* box-shadow: 0 0 5px 2px #f3f3f3; */
+  cursor: pointer;
+}
+.icon-menu--dark:hover {
+  background: #837f7f;
+  width: 41px;
+  height: 41px;
+}
+/* Highlight the components on the dark background */
+
+.highlighter {
+  box-shadow: 0 0 5px 2px #f3f3f3;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: end;
+  }
+  .nav__list a {
+    font-size: 1.6rem;
+  }
+
+  /* SETTING permament visibility when page is reload*/
+  /*
+  .nav__list.collapsible__content {
+    max-height: 100%;
+    overflow: hidden;
+    opacity: 1;
+  }
+  */
+}
+
+/* Set toggler prop when menu is closed */
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+/* Toggler highlighted when menu is open*/
+
+/* if (nav has a set-visibility class)
+  apply .nav__toggler class */
+.nav.set-visibility .nav__toggler {
+  box-shadow: 0 0 5px 2.5px #f3f3f3;
+  border-radius: 5px;
+  opacity: 1;
+}
+/* ======================================== */
+/* MAIN SECTION */
 .main {
   display: grid;
   gap: 10px;
@@ -52,28 +260,6 @@ h4 {
   background: none;
   box-shadow: none;
 }
-.box-header--nav-bar {
-  justify-content: flex-start;
-}
-
-/* ======================================== */
-/* Need to set to Border-box!!! */
-.box-header-btn {
-  padding: 1rem;
-  margin: 1rem;
-  background: dodgerblue;
-  border: none;
-  border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem gray;
-}
-.btn-ancor {
-  text-decoration: none;
-  color: white;
-}
-.box-header-btn:hover {
-  background: hsl(210, 86%, 42%);
-}
-/* ======================================== */
 .box-one:hover {
   transform: rotate(10deg);
 }
@@ -96,10 +282,10 @@ h4 {
   transform: perspective(300px) rotateY(50deg);
 }
 
-.box-eight:hover {
-  transform: perspective(300px) rotateY(50deg);
-  transform-origin: 0 50%;
-}
+/* .box-eight:hover { */
+/* transform: perspective(300px) rotateY(50deg); */
+/* transform-origin: 0 50%; */
+/* } */
 
 .box-nine:hover {
   transform: rotate(45deg);

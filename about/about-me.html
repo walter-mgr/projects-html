@@ -18,75 +18,88 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="nav grid--1x2 collapsible">
-      <div class="logo-container__brand" data-aos="zoom-in-down">
-        <img class="logo" src="/images/banner.webp" alt="logo" />
-        Walter-mgr
-      </div>
+    <header>
+      <!-- NAVBAR -->
+      <nav class="nav grid--1x2 collapsible">
+        <div class="logo-container__brand" data-aos="zoom-in-down">
+          <img class="logo" src="/images/banner.webp" alt="logo" />
+          Walter-mgr
+        </div>
 
-      <svg
-        class="icon-menu--dark nav__toggler"
-        xmlns="http://www.w3.org/2000/svg"
-        height="24"
-        viewBox="0 
-          -960 960 960"
-        width="24"
-      >
-        <path
-          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v
-      -80h720v80
-          H120Z"
-        />
-      </svg>
+        <svg
+          class="icon-menu--dark nav__toggler"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 
+      -960 960 960"
+          width="24"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v
+  -80h720v80
+      H120Z"
+          />
+        </svg>
 
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item">
-          <a href="/photo-gallery/photo.html">Gallery</a>
-        </li>
-        <li class="nav__item">
-          <a href="https://github.com/walter-mgr?tab=repositories">GitHub</a>
-        </li>
-        <li class="nav__item">
-          <a href="mailto:valeraborzak@gmail.com">Mail Me</a>
-        </li>
-        <li class="nav__item"><a href="#projects">Projects</a></li>
-        <li class="nav__item"><a href="/index.html">Main Page</a></li>
-      </ul>
-    </nav>
-    <!-- HEADER -->
-    <header class="header grid grid--1x2">
-      <div data-aos="fade-right">
-        <h1>About me</h1>
-        <p>My skills</p>
-      </div>
-      <div class="image-container__item" data-aos="fade-left">
-        <img
-          class="banner highlighter"
-          src="/images/my-photo-3.jpg"
-          alt="My photo"
-        />
-        <h3>Valeriy Borzak</h3>
-      </div>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="/photo-gallery/photo.html">Gallery</a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://github.com/walter-mgr?tab=repositories"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="mailto:valeraborzak@gmail.com">Mail Me</a>
+          </li>
+          <li class="nav__item"><a href="#projects">Projects</a></li>
+          <li class="nav__item"><a href="/index.html">Main Page</a></li>
+        </ul>
+      </nav>
+      <!-- HERO -->
+      <header class="hero grid grid--1x2">
+        <div data-aos="fade-right">
+          <h1>About me</h1>
+          <p>My skills</p>
+        </div>
+        <div class="image-container__item" data-aos="fade-left">
+          <img
+            class="banner highlighter"
+            src="/images/my-photo-3.jpg"
+            alt="My photo"
+          />
+          <h3>Valeriy Borzak</h3>
+        </div>
+      </header>
     </header>
+
     <!-- MAIN SECTION - IMAGE CONTAINER -->
-    <section class="image-container grid grid--1x2">
-      <div class="image-container__item box-shadow" data-aos="fade-down-right">
-        <img src="/images/crt-html-1.png" alt="" />
-      </div>
-      <div class="image-container__item box-shadow" data-aos="fade-down-left">
-        <img src="/images/crt-html-2.png" alt="" />
-      </div>
-      <div class="image-container__item box-shadow" data-aos="flip-left">
-        <img src="/images/crt-html-3.png" alt="" />
-      </div>
-      <div class="image-container__item box-shadow" data-aos="flip-right">
-        <img src="/images/crt-js-1.png" alt="" />
-      </div>
-      <div class="image-container__item box-shadow" data-aos="flip-up">
-        <img src="/images/crt-js-2.png" alt="" />
-      </div>
-    </section>
+    <main>
+      <section class="image-container grid grid--1x2">
+        <div
+          class="image-container__item box-shadow"
+          data-aos="fade-down-right"
+        >
+          <img src="/images/crt-html-1.png" alt="" />
+        </div>
+        <div class="image-container__item box-shadow" data-aos="fade-down-left">
+          <img src="/images/crt-html-2.png" alt="" />
+        </div>
+        <div class="image-container__item box-shadow" data-aos="flip-left">
+          <img src="/images/crt-html-3.png" alt="" />
+        </div>
+        <div class="image-container__item box-shadow" data-aos="flip-right">
+          <img src="/images/crt-js-1.png" alt="" />
+        </div>
+        <div class="image-container__item box-shadow" data-aos="flip-up">
+          <img src="/images/crt-js-2.png" alt="" />
+        </div>
+      </section>
+    </main>
+
     <!-- FOOTER COMPONENT -->
     <!-- Brand element -->
     <footer class="footer grid" data-aos="zoom-in">

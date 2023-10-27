@@ -63,8 +63,8 @@ a:hover {
 }
 
 /* ============================== */
-/* HEADER component */
-.header {
+/* HERO component */
+.hero {
   width: auto;
   height: auto;
   background: var(--color-header);
@@ -81,8 +81,10 @@ h1 {
   justify-self: center;
   text-align: center;
 }
-.header h2 {
+.image-container__item > h3 {
   color: var(--color-headings);
+  font-weight: 400;
+  text-align: center;
 }
 
 /* ======================================== */
@@ -195,6 +197,8 @@ h1 {
 
 /* Toggler highlighted when menu is open*/
 
+/* if (nav has a set-visibility class)
+  apply .nav__toggler class */
 .nav.set-visibility .nav__toggler {
   box-shadow: 0 0 5px 2.5px #f3f3f3;
   border-radius: 5px;
@@ -211,11 +215,6 @@ h1 {
 
 .image-container__item img {
   width: 100%;
-}
-.image-container__item > h3 {
-  color: var(--color-headings);
-  font-weight: 400;
-  text-align: center;
 }
 
 .box-shadow {
@@ -330,5 +329,17 @@ h1 {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
+  }
+}
+/* ================================== */
+/* QUERY CONTAINER */
+
+.main--container,
+.side-bar--container {
+  container-type: inline-size;
+}
+@container (max-width: 500px) {
+  .card {
+    display: column;
   }
 }

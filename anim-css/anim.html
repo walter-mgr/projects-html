@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=optional"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/anim-css/anim.css" />
+  </head>
+
+  <body>
+    <div class="box box-header box-header--nav-bar">
+      <button class="box-header-btn">
+        <a href="#" class="btn-ancor">Back to Homepage</a>
+      </button>
+    </div>
+    <header class="box box-header">
+      <h1>The Samples of Transformation and Animation</h1>
+    </header>
+    <main class="main container">
+      <div class="box box-anim box-ten">
+        <h2>Transformation-Animation</h2>
+        <div class="box-ten">
+          <h3 class="box-ten-h3">@keyframes pop {</h3>
+          <h3 class="box-ten-h3">0% { transform: scale(1); }</h3>
+          <h3 class="box-ten-h3">25% { transform: scale(1.3); }</h3>
+          <h3 class="box-ten-h3">
+            50% { transform: rotate(45deg); background: tomato; }
+          </h3>
+          <h3 class="box-ten-h3">100% { transform: rotate(0); } }</h3>
+        </div>
+
+        <h4>.box-anim { animation: pop 4s linear 1s 3 alternate; }</h4>
+      </div>
+      <div class="box box-anim box-el">
+        <h2>Reusable Animation</h2>
+        <h3>Create a class .box-anim. Add a class to element You want</h3>
+        <h4>.box-anim { animation: pop 4s linear 1s 3 alternate; }</h4>
+      </div>
+      <div class="box box-one">
+        <h2>Transformation-Rotation</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>.box-one:hover { transform: rotate(10deg); }</h4>
+      </div>
+      <div class="box box-two">
+        <h2>Transformation-Scale</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>.box-two:hover { transform: scale(1.1); }</h4>
+      </div>
+      <div class="box box-three">
+        <h2>Transformation-Skew</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>.box-three:hover { transform: skew(-15deg); }</h4>
+      </div>
+      <div class="box box-four">
+        <h2>Transformation-Translate</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>.box-four:hover { transform: translate(-20px, 20px); }</h4>
+      </div>
+      <div class="box box-five">
+        <h2>Transformation-TranslateY-Rotate</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>.box-five:hover { transform: translateY(100px) rotate(30deg); }</h4>
+      </div>
+      <div class="box box-six">
+        <h2>Transformation-Perspective-TranslateZ-Rotate</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>
+          .box-six:hover { transform: perspective(300px) translateZ(100px)
+          rotate(10deg); }
+        </h4>
+      </div>
+      <div class="box box-seven">
+        <h2>Transformation-Perspective-RotateY</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>
+          .box-seven:hover { transform: perspective(300px) rotateY(50deg); }
+        </h4>
+      </div>
+      <!-- <div class="box box-eight"> -->
+      <!-- <h2>Transformation-Perspective-RotateY</h2> -->
+      <!-- <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3> -->
+      <!-- <h4> -->
+      <!-- .box-eight:hover { transform: perspective(300px) rotateY(50deg); -->
+      <!-- transform-origin: 0 50%; } -->
+      <!-- </h4> -->
+      <!-- </div> -->
+
+      <div class="box box-nine">
+        <h2>Transformation-Rotate Change background</h2>
+        <h3>.box {transition: transform 0.7s linear 0.5ms;}</h3>
+        <h4>
+          .box-nine:hover { transform: rotate(45deg); background: dodgerblue; }
+        </h4>
+      </div>
+    </main>
+  </body>
+</html>

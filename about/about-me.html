@@ -6,20 +6,21 @@
     <title>About me</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/about-me.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=optional"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- HEADER SECTION -->
     <header>
-      <!-- NAVBAR -->
+      <!-- Navbar component -->
       <nav class="nav grid--1x2 collapsible">
         <div class="logo-container__brand" data-aos="zoom-in-down">
           <img class="logo" src="/images/banner.webp" alt="logo" />
@@ -56,10 +57,13 @@
             <a href="mailto:valeraborzak@gmail.com">Mail Me</a>
           </li>
           <li class="nav__item"><a href="#projects">Projects</a></li>
+          <li class="nav__item">
+            <a href="/anim-css/anim.html">CSS Animation</a>
+          </li>
           <li class="nav__item"><a href="/index.html">Main Page</a></li>
         </ul>
       </nav>
-      <!-- HERO -->
+      <!-- Hero component -->
       <header class="hero grid grid--1x2">
         <div data-aos="fade-right">
           <h1>About me</h1>
@@ -100,14 +104,14 @@
       </section>
     </main>
 
-    <!-- FOOTER COMPONENT -->
-    <!-- Brand element -->
+    <!-- FOOTER SECTION -->
+    <!-- Brand component -->
     <footer class="footer grid" data-aos="zoom-in">
       <a class="logo-container" href="#" data-aos="zoom-out-right">
         <img src="/images/banner.webp" alt="banner" />
         <p class="copyright">Copyright 2023&copy; Valeriy Borzak</p>
       </a>
-      <!-- Collapsible element 1 -->
+      <!-- Collapsible component 1 -->
       <div id="projects" class="collapsible set-visibility">
         <header class="collapsible__header">
           <h3 class="collapsible__heading">JS Projects</h3>
@@ -135,7 +139,7 @@
           <div class="nav__item"><a href="#">Home</a></div>
         </div>
       </div>
-      <!-- Collapsible element 2 -->
+      <!-- Collapsible component 2 -->
       <div class="collapsible set-visibility">
         <header class="collapsible__header">
           <h3 class="collapsible__heading">Ionicons</h3>
@@ -149,7 +153,7 @@
           <div class="nav__item"><a href="#">Home</a></div>
         </div>
       </div>
-      <!-- Collapsible element 3 -->
+      <!-- Collapsible component 3 -->
       <div class="collapsible set-visibility">
         <header class="collapsible__header">
           <h3 class="collapsible__heading">Ionicons</h3>
@@ -165,7 +169,7 @@
           <div class="nav__item"><a href="#">Home</a></div>
         </div>
       </div>
-      <!-- Collapsible element 4 -->
+      <!-- Collapsible component 4 -->
       <div class="collapsible set-visibility">
         <header class="collapsible__header">
           <h3 class="collapsible__heading">Contacts</h3>

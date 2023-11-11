@@ -18,7 +18,7 @@ form.addEventListener("submit", (e) => {
   questionItems.forEach((item) => {
     item.classList.add("incorrect")
     item.classList.remove("correct")
-    console.dir(item)
+    // console.dir(item)
   })
   /* 3. Take the only checked answers using object property "checked"
   or console.dir(item) */
